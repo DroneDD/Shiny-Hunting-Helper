@@ -1,0 +1,20 @@
+{
+  "name": "shiny-hunting",
+  "version": "1.0.0",
+  "description": "Helps to count the pokemons encountered, keeps some stats",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "shiny",
+    "timer",
+    "count",
+    "script"
+  ],
+  "author": "DroneDD",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.2"
+  }
+}

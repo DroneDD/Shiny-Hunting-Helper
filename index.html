@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Shiny Hunting Helper!</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+    <header>
+        <div class="title-bar">Shiny Hunting Helper</div>
+        <button id="minimize-button" tabindex="-1"></button>
+        <button id="close-button" tabindex="-1"></button>
+    </header>
+    <h1></h1>
+    <main>
+      <p>Timer: <span id="stopwatch">00:00</span></p>
+      <p>Counter: <span id="encounter">0</span></p>
+      <button id="start" onclick="startbtn()">Start</button>
+      <button id="lap" onclick="lapbtn()">Lap</button>
+      <button id="stop" onclick="stopbtn()">Stop</button>
+    </main>
+    <script>window.$ = window.jQuery = require('./script/jquery.min.js');</script>
+    <script src="./script/front-end.js"></script>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js');
+    </script>
+  </body>
+</html>

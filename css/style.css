@@ -1,0 +1,116 @@
+html {
+    background-color: rgb(38, 38, 41);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(199, 199, 199);
+    font-family: "Verdana", "Geneva", sans-serif;
+}
+
+header {
+    background-color: rgb(75, 75, 83);
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    -webkit-app-region: drag;
+}
+
+main {
+    padding: 20px 30px 0px 30px;
+}
+
+/***********************************************************************************/
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(78, 78, 82); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(108, 108, 112); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(152, 152, 155);  
+  }
+
+button {
+    -webkit-app-region: no-drag;
+    background-color: rgb(51, 51, 54);
+    outline: none;
+    color: white;
+    height: 32px;
+    border: 1px solid rgb(92, 92, 100);
+    margin: 1px;
+}
+
+button:hover {
+    background-color: rgb(86, 86, 92);
+    cursor: pointer;
+}
+
+.btn-selected {
+    background-color: rgb(98, 98, 105);
+    border-color: white;
+}
+
+.btn-selected:hover {
+    background-color: rgb(116, 116, 124);
+}
+
+#minimize-button, #close-button {
+    outline: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+}
+
+#minimize-button:hover, #close-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#minimize-button {
+    background: url('../images/minimize.png');
+    top: 0;
+    right: 30px;
+}
+
+#close-button {
+    background: url('../images/close.png');
+    top: 0;
+    right: 0;
+}
+
+#dropdown-arrow {
+    background: url('../images/drop.png') no-repeat center;
+    float: right;
+    width: 18px !important;
+    margin-right: 4px;
+}
+
+.title-bar {
+    height: 80px;
+    line-height: 80px;
+    padding-left: 10px;
+    font-size: 140%;
+}
