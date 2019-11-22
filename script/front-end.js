@@ -1,7 +1,10 @@
 $(document).ready(function() {
     $(document).bind("keyup", function(e) {
         if (e.key == " ") {
-            lapbtn();
+            if (!timer)
+                startbtn();
+            else
+                lapbtn();
         }
     });
 });
@@ -54,13 +57,14 @@ function startbtn() {
 function lapbtn() {
     if (timer){
         window.clearInterval(timer);
+        timer = null;
         centiseconds = 0;
         seconds = 0;
         minutes = 0;
-        showTime();
-        timer = setInterval(updateTime, 10);
         encounters++;
         $("#encounter").text(encounters);
+        showTime();
+        timer = setInterval(updateTime, 10);
     }
 }
 function stopbtn() {

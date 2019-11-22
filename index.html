@@ -17,9 +17,9 @@
     <main>
       <p>Timer: <span id="stopwatch">00:00</span></p>
       <p>Counter: <span id="encounter">0</span></p>
-      <button id="start" onclick="startbtn()">Start</button>
-      <button id="lap" onclick="lapbtn()">Lap</button>
-      <button id="stop" onclick="stopbtn()">Stop</button>
+      <button id="start" tabindex="-1" onclick="startbtn()">Start</button>
+      <button id="lap" tabindex="-1" onclick="lapbtn()">Lap</button>
+      <button id="stop" tabindex="-1" onclick="stopbtn()">Stop</button>
     </main>
     <script>window.$ = window.jQuery = require('./script/jquery.min.js');</script>
     <script src="./script/front-end.js"></script>
