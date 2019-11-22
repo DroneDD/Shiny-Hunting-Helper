@@ -50,6 +50,7 @@ function startbtn() {
     }
     else {
         window.clearInterval(timer);
+        timer = null;
         $("#start").text("Resume");
     }
 
@@ -68,15 +69,13 @@ function lapbtn() {
     }
 }
 function stopbtn() {
-    if (timer){
-        window.clearInterval(timer);
-        timer = null;
-        centiseconds = 0;
-        seconds = 0;
-        minutes = 0;
-        showTime()
-        $("#start").text("Start");
-        encounters = 0;
-        $("#encounter").text(encounters);
-    }
+    window.clearInterval(timer);
+    timer = null;
+    centiseconds = 0;
+    seconds = 0;
+    minutes = 0;
+    showTime()
+    $("#start").text("Start");
+    encounters = 0;
+    $("#encounter").text(encounters);
 }
